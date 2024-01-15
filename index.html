@@ -11,9 +11,43 @@
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
-    Day DD Month MM Year YYYY -- years -- months -- days
-
-    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+    <main>
+      <div class="container">
+        <div class="form-date-input">
+          <form action="#">
+            <div class="date">
+              <div class="day">
+                <label for="day">Day</label>
+                <input type="number" id="day" min="0" placeholder="DD" />
+              </div>
+              <div class="month">
+                <label for="month">Month</label>
+                <input type="number" id="month" min="0" placeholder="MM" />
+              </div>
+              <div class="year">
+                <label for="year">Year</label>
+                <input type="number" id="year" min="0" placeholder="YYYY" />
+              </div>
+            </div>
+            <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="" /></button>
+          </form>
+          <div class="result-calculate">
+            <div class="years">
+              <span class="calculate-number">38</span>
+              <span class="calculate-date">years</span>
+            </div>
+            <div class="months">
+              <span class="calculate-number">3</span>
+              <span class="calculate-date">months</span>
+            </div>
+            <div class="days">
+              <span class="calculate-number">26</span>
+              <span class="calculate-date">days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
